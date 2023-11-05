@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/timeAttackReadyFragment">
+
+
+    <fragment
+        android:id="@+id/timeAttackReadyFragment"
+        android:name="com.inandout.real_rider.view.TimeAttackReadyFragment"
+        android:label="TimeAttackReadyFragment"
+        tools:layout="@layout/fragment_time_attack_ready"
+        >
+        <action
+            android:id="@+id/action_timeAttackReadyFragment_to_playScreenFragment"
+            app:destination="@id/playScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playScreenFragment"
+        android:name="com.inandout.real_rider.view.PlayScreenFragment"
+        android:label="PlayScreenFragment" />
+</navigation>
