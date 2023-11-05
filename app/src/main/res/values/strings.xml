@@ -1,5 +1,18 @@
 <resources>
     <string name="app_name">REAL_RIDER</string>
-    <string name="title_TIME_ATTACK">TIME ATTACK</string>
     <string name="start">START</string>
+    <string name="ready">READY</string>
+
+    <!-- title -->
+    <string name="title_TIME_ATTACK">TIME ATTACK</string>
+    <string name="title_RACE_IN_PROGRESS">RACE IN PROGRESS</string>
+
+    <string name="PLAYER1">1 PLAYER</string>
+    <string name="PLAYER2">2 PLAYER</string>
+    <string name="PLAYER3">3 PLAYER</string>
+    <string name="PLAYER4">4 PLAYER</string>
+
+    <string name="NEXT">NEXT</string>
+
+
 </resources>

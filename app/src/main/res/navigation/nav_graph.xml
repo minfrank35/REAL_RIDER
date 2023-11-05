@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/timeAttackReadyFragment">
+    app:startDestination="@id/singleReadyFragment">
 
 
     <fragment
@@ -19,5 +19,40 @@
     <fragment
         android:id="@+id/playScreenFragment"
         android:name="com.inandout.real_rider.view.PlayScreenFragment"
-        android:label="PlayScreenFragment" />
+        android:label="PlayScreenFragment"
+        tools:layout="@layout/fragment_play_screen"
+        >
+        <action
+            android:id="@+id/action_playScreenFragment_to_tempResultFragment"
+            app:destination="@id/tempResultFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/playResultFragment"
+        android:name="com.inandout.real_rider.view.PlayResultFragment"
+        android:label="PlayResultFragment"
+        tools:layout="@layout/fragment_play_result"
+        />
+    <fragment
+        android:id="@+id/tempResultFragment"
+        android:name="com.inandout.real_rider.view.TempResultFragment"
+        android:label="TempResultFragment"
+        tools:layout="@layout/fragment_temp_result"
+        >
+        <action
+            android:id="@+id/action_tempResultFragment_to_playResultFragment"
+            app:destination="@id/playResultFragment"
+            app:popUpTo="@id/singleReadyFragment"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/singleReadyFragment"
+        android:name="com.inandout.real_rider.view.SingleReadyFragment"
+        android:label="SingleReadyFragment"
+        tools:layout="@layout/fragment_single_ready"
+        >
+        <action
+            android:id="@+id/action_singleReadyFragment_to_playScreenFragment"
+            app:destination="@id/playScreenFragment" />
+    </fragment>
 </navigation>

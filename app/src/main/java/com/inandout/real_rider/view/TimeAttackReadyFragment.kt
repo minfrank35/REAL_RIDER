@@ -29,7 +29,7 @@ class TimeAttackReadyFragment : BaseFragment<FragmentTimeAttackReadyBinding>(R.l
 
     private fun initListener() {
         binding.commTitleBarMain.setOnBackButtonListener {
-            findNavController().popBackStack();
+            findNavController().popBackStack()
         }
         binding.tvStartBtn.setOnClickListener {
             findNavController().navigate(R.id.playScreenFragment)
@@ -37,7 +37,7 @@ class TimeAttackReadyFragment : BaseFragment<FragmentTimeAttackReadyBinding>(R.l
     }
 
     private fun initRecyclerView() {
-        //TODO :: TEST
+
         val list : ArrayList<TimeAttackUserUiState> = ArrayList()
         list.add(TimeAttackUserUiState(name = "짱구", imageId = R.drawable.ic_launcher_foreground, time = "01:20:23"))
         list.add(TimeAttackUserUiState(name = "짱구", imageId = R.drawable.ic_launcher_foreground, time = "01:20:23"))
