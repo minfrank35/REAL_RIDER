@@ -14,6 +14,10 @@
         >
         <action
             android:id="@+id/action_timeAttackReadyFragment_to_playScreenFragment"
+            app:enterAnim="@anim/anim_slide_in_right"
+            app:exitAnim="@anim/anim_slide_out_left"
+            app:popEnterAnim="@anim/anim_slide_in_left"
+            app:popExitAnim="@anim/anim_slide_out_right"
             app:destination="@id/playScreenFragment" />
     </fragment>
     <fragment
@@ -24,6 +28,10 @@
         >
         <action
             android:id="@+id/action_playScreenFragment_to_tempResultFragment"
+            app:enterAnim="@anim/anim_slide_in_right"
+            app:exitAnim="@anim/anim_slide_out_left"
+            app:popEnterAnim="@anim/anim_slide_in_left"
+            app:popExitAnim="@anim/anim_slide_out_right"
             app:destination="@id/tempResultFragment" />
     </fragment>
 
@@ -41,6 +49,10 @@
         >
         <action
             android:id="@+id/action_tempResultFragment_to_playResultFragment"
+            app:enterAnim="@anim/anim_slide_in_right"
+            app:exitAnim="@anim/anim_slide_out_left"
+            app:popEnterAnim="@anim/anim_slide_in_left"
+            app:popExitAnim="@anim/anim_slide_out_right"
             app:destination="@id/playResultFragment"
             app:popUpTo="@id/singleReadyFragment"
             />
@@ -53,6 +65,10 @@
         >
         <action
             android:id="@+id/action_singleReadyFragment_to_playScreenFragment"
+            app:enterAnim="@anim/anim_slide_in_right"
+            app:exitAnim="@anim/anim_slide_out_left"
+            app:popEnterAnim="@anim/anim_slide_in_left"
+            app:popExitAnim="@anim/anim_slide_out_right"
             app:destination="@id/playScreenFragment" />
     </fragment>
     <fragment
@@ -63,6 +79,10 @@
         >
         <action
             android:id="@+id/action_introFragment_to_intro2Fragment"
+            app:enterAnim="@anim/anim_slide_in_right"
+            app:exitAnim="@anim/anim_slide_out_left"
+            app:popEnterAnim="@anim/anim_slide_in_left"
+            app:popExitAnim="@anim/anim_slide_out_right"
             app:destination="@id/intro2Fragment" />
     </fragment>
     <fragment
@@ -74,6 +94,10 @@
         >
         <action
             android:id="@+id/action_intro2Fragment_to_loginFragment"
+            app:enterAnim="@anim/anim_slide_in_right"
+            app:exitAnim="@anim/anim_slide_out_left"
+            app:popEnterAnim="@anim/anim_slide_in_left"
+            app:popExitAnim="@anim/anim_slide_out_right"
             app:destination="@id/loginFragment" />
     </fragment>
     <fragment
@@ -85,6 +109,10 @@
         >
         <action
             android:id="@+id/action_loginFragment_to_mainFragment"
+            app:enterAnim="@anim/anim_slide_in_right"
+            app:exitAnim="@anim/anim_slide_out_left"
+            app:popEnterAnim="@anim/anim_slide_in_left"
+            app:popExitAnim="@anim/anim_slide_out_right"
             app:destination="@id/mainFragment" />
     </fragment>
     <fragment
@@ -95,9 +123,17 @@
         >
         <action
             android:id="@+id/action_mainFragment_to_timeAttackReadyFragment"
+            app:enterAnim="@anim/anim_slide_in_right"
+            app:exitAnim="@anim/anim_slide_out_left"
+            app:popEnterAnim="@anim/anim_slide_in_left"
+            app:popExitAnim="@anim/anim_slide_out_right"
             app:destination="@id/timeAttackReadyFragment" />
         <action
             android:id="@+id/action_mainFragment_to_singleReadyFragment"
+            app:enterAnim="@anim/anim_slide_in_right"
+            app:exitAnim="@anim/anim_slide_out_left"
+            app:popEnterAnim="@anim/anim_slide_in_left"
+            app:popExitAnim="@anim/anim_slide_out_right"
             app:destination="@id/singleReadyFragment" />
     </fragment>
 </navigation>

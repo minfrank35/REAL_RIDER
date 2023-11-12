@@ -29,7 +29,7 @@ class Intro2Fragment : BaseFragment<FragmentIntro2Binding>(R.layout.fragment_int
         changeColorPartOfTextView(binding.tvIntro2RealRider, 0, 1, Color.parseColor("#F31414"))
         changeColorPartOfTextView(binding.tvIntro2RealRider, 5, 6, Color.parseColor("#668E5B"))
         Handler().postDelayed({
-            findNavController().navigate(R.id.action_intro2Fragment_to_loginFragment)
+            findNavControllerSafely()?.navigate(R.id.action_intro2Fragment_to_loginFragment)
         }, 3000) // 3초(3000밀리초) 지연
     }
 }
