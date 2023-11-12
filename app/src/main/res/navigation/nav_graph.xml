@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/singleReadyFragment">
+    app:startDestination="@id/introFragment">
 
 
     <fragment
@@ -54,5 +54,50 @@
         <action
             android:id="@+id/action_singleReadyFragment_to_playScreenFragment"
             app:destination="@id/playScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.inandout.real_rider.view.IntroFragment"
+        android:label="IntroFragment"
+        tools:layout="@layout/fragment_intro"
+        >
+        <action
+            android:id="@+id/action_introFragment_to_intro2Fragment"
+            app:destination="@id/intro2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/intro2Fragment"
+        android:name="com.inandout.real_rider.view.Intro2Fragment"
+        android:label="Intro2Fragment"
+        tools:layout="@layout/fragment_intro2"
+
+        >
+        <action
+            android:id="@+id/action_intro2Fragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.inandout.real_rider.view.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login"
+
+        >
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.inandout.real_rider.view.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main"
+        >
+        <action
+            android:id="@+id/action_mainFragment_to_timeAttackReadyFragment"
+            app:destination="@id/timeAttackReadyFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_singleReadyFragment"
+            app:destination="@id/singleReadyFragment" />
     </fragment>
 </navigation>
