@@ -53,7 +53,7 @@
 
                 android:text="@string/CLASSIC"
                 android:layout_marginBottom="14dp"
-                android:textSize="17dp"
+                android:textSize="25dp"
                 android:fontFamily="@font/orbitron_bold"
                 android:letterSpacing="0.1"
 
@@ -86,7 +86,7 @@
 
                 android:text="@string/ARCADE"
                 android:layout_marginBottom="14dp"
-                android:textSize="17dp"
+                android:textSize="25dp"
                 android:fontFamily="@font/orbitron_bold"
                 android:letterSpacing="0.1"
 
@@ -119,9 +119,10 @@
 
                 android:text="@string/TIME_ATTACK"
                 android:layout_marginBottom="14dp"
-                android:textSize="17dp"
+                android:textSize="25dp"
                 android:fontFamily="@font/orbitron_bold"
                 android:letterSpacing="0.1"
+                android:textAlignment="center"
 
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

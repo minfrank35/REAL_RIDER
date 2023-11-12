@@ -16,7 +16,7 @@
     <string name="REAL_RIDER">REAL RIDER</string>
     <string name="CLASSIC">CLASSIC</string>
     <string name="ARCADE">ARCADE</string>
-    <string name="TIME_ATTACK">TIME ATTACK</string>
+    <string name="TIME_ATTACK">TIME\nATTACK</string>
 
 
 </resources>
