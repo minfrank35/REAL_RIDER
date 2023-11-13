@@ -1,0 +1,43 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'maven-publish'
+}
+
+apply from: '../constants.gradle'
+apply plugin: 'com.android.library'
+
+project.afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+            }
+        }
+    }
+}
+
+android {
+    compileSdkVersion 34
+
+    defaultConfig {
+        minSdkVersion 24
+        targetSdkVersion 34
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+
+    namespace 'com.alexvas.rtsp'
+}
+
+dependencies {
+    implementation "androidx.annotation:annotation:$androidXAnnotationVersion"
+    implementation "com.google.android.exoplayer:exoplayer-core:$exoplayerVersion"
+}
