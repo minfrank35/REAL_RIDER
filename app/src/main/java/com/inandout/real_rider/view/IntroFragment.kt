@@ -21,7 +21,7 @@ class IntroFragment : BaseFragment<FragmentIntroBinding>(R.layout.fragment_intro
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Handler().postDelayed({
-            findNavControllerSafely()?.navigate(R.id.action_introFragment_to_intro2Fragment)
+            findNavControllerSafely()?.navigateSafe(R.id.action_introFragment_to_intro2Fragment)
         }, 3000) // 3초(3000밀리초) 지연
     }
 }

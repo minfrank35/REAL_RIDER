@@ -13,6 +13,7 @@ import com.inandout.real_rider.databinding.FragmentPlayResultBinding
 import com.inandout.real_rider.base.BaseFragment
 import com.inandout.real_rider.data.RaceInProgressUserUiState
 import com.inandout.real_rider.data.TimeAttackUserUiState
+import java.util.*
 
 class PlayResultFragment : BaseFragment<FragmentPlayResultBinding>(R.layout.fragment_play_result) {
     override fun onCreateView(

@@ -12,6 +12,7 @@ import com.inandout.real_rider.decoration.RecyclerContentPaddingDecoration
 import com.inandout.real_rider.RecyclerAdapter.RVRankAdapter
 
 import com.inandout.real_rider.base.BaseFragment
+import java.util.*
 
 class TimeAttackReadyFragment : BaseFragment<FragmentTimeAttackReadyBinding>(R.layout.fragment_time_attack_ready) {
     override fun onCreateView(
@@ -32,7 +33,7 @@ class TimeAttackReadyFragment : BaseFragment<FragmentTimeAttackReadyBinding>(R.l
             findNavController().popBackStack()
         }
         binding.tvStartBtn.setOnClickListener {
-            findNavController().navigate(R.id.playScreenFragment)
+            findNavController().navigateSafe(R.id.playScreenFragment)
         }
     }
 

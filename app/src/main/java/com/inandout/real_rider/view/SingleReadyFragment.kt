@@ -28,7 +28,7 @@ class SingleReadyFragment : BaseFragment<FragmentSingleReadyBinding>(R.layout.fr
             findNavController().popBackStack()
         }
         binding.tvReadyBtn.setOnClickListener {
-            findNavController().navigate(R.id.action_singleReadyFragment_to_playScreenFragment)
+            findNavController().navigateSafe(R.id.action_singleReadyFragment_to_playScreenFragment)
         }
     }
 }

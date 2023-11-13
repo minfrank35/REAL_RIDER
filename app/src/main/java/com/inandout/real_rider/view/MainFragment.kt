@@ -28,13 +28,13 @@ class MainFragment : BaseFragment<FragmentMainBinding>(R.layout.fragment_main) {
             findNavController().popBackStack()
         }
         binding.clClassic.setOnClickListener {
-            findNavController().navigate(R.id.action_mainFragment_to_singleReadyFragment)
+            findNavController().navigateSafe(R.id.action_mainFragment_to_singleReadyFragment)
         }
         binding.clArcade.setOnClickListener {
-            findNavController().navigate(R.id.action_mainFragment_to_singleReadyFragment)
+            findNavController().navigateSafe(R.id.action_mainFragment_to_singleReadyFragment)
         }
         binding.clTimeAttack.setOnClickListener {
-            findNavController().navigate(R.id.action_mainFragment_to_timeAttackReadyFragment)
+            findNavController().navigateSafe(R.id.action_mainFragment_to_timeAttackReadyFragment)
         }
     }
 }

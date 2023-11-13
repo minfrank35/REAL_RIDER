@@ -31,7 +31,7 @@ class LoginFragment : BaseFragment<FragmentLoginBinding>(R.layout.fragment_login
 
     private fun initListener() {
         binding.tvStartBtn.setOnClickListener {
-            findNavController().navigate(R.id.action_loginFragment_to_mainFragment)
+            findNavController().navigateSafe(R.id.action_loginFragment_to_mainFragment)
         }
     }
 }

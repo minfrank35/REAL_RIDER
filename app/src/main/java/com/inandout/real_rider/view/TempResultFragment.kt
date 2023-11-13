@@ -24,7 +24,7 @@ class TempResultFragment : BaseFragment<FragmentTempResultBinding>(R.layout.frag
 
     private fun initListener() {
         binding.tvNextBtn.setOnClickListener {
-            findNavController().navigate(R.id.action_tempResultFragment_to_playResultFragment)
+            findNavController().navigateSafe(R.id.action_tempResultFragment_to_playResultFragment)
         }
     }
 }

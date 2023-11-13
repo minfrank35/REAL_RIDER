@@ -37,7 +37,7 @@ class PlayScreenFragment : BaseFragment<FragmentPlayScreenBinding>(R.layout.frag
 
         binding.ivAccel.setOnClickListener {
             // TODO
-            findNavController().navigate(R.id.action_playScreenFragment_to_tempResultFragment)
+            findNavController().navigateSafe(R.id.action_playScreenFragment_to_tempResultFragment)
         }
 
         binding.ivBrake.setOnClickListener {
