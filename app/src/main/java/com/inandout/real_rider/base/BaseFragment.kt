@@ -5,11 +5,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.activity.OnBackPressedCallback
+import androidx.annotation.IdRes
 import androidx.annotation.LayoutRes
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
+import androidx.navigation.NavOptions
+import androidx.navigation.Navigator
 import androidx.navigation.fragment.findNavController
 
 
@@ -39,6 +42,19 @@ abstract class BaseFragment<T : ViewDataBinding>(@LayoutRes private val layoutRe
             findNavController() //The problem is caused when you try to call findNavController() on a fragment that has been detached,
         } else {
             null
+        }
+    }
+
+    fun NavController.navigateSafe(
+        @IdRes resId: Int,
+        args: Bundle? = null,
+        navOptions: NavOptions? = null,
+        navExtras: Navigator.Extras? = null
+    ) {
+        val action = currentDestination?.getAction(resId) ?: graph.getAction(resId)
+        // 현재 fragment의 id와 이동할 fragment의 id가 다르면 화면이동 실행 (같다는 건, 이미 이동이 된 후이기 때문)
+        if (action != null && currentDestination?.id != action.destinationId) {
+            navigate(resId, args, navOptions, navExtras)
         }
     }
 }
