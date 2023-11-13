@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "REAL_RIDER"
 include ':app'
+include ':library-client-rtsp'
