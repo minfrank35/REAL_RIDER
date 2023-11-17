@@ -7,9 +7,6 @@ android {
     namespace 'com.inandout.real_rider'
     compileSdk 34
 
-    kotlin {
-        jvmToolchain(17)
-    }
 
     defaultConfig {
         applicationId "com.inandout.real_rider"
