@@ -6,63 +6,63 @@
         android:layout_height="match_parent"
         tools:context=".view.login.IntroFragment">
 
-        <com.alexvas.rtsp.widget.RtspSurfaceView
+        <!--<com.alexvas.rtsp.widget.RtspSurfaceView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:id="@+id/svVideo" />
+            android:id="@+id/svVideo" />-->
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             >
-            <TextView
-                android:id="@+id/rank"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <!--  <TextView
+                  android:id="@+id/rank"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
 
-                android:layout_marginTop="21dp"
-                android:layout_marginStart="38dp"
+                  android:layout_marginTop="21dp"
+                  android:layout_marginStart="38dp"
 
-                android:fontFamily="@font/orbitron_bold"
-                android:textSize="18dp"
-                android:textColor="@color/black"
+                  android:fontFamily="@font/orbitron_bold"
+                  android:textSize="18dp"
+                  android:textColor="@color/black"
 
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toTopOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
 
-                tools:text="BEST REC"
-                />
+                  tools:text="BEST REC"
+                  />-->
 
-            <ImageView
-                android:id="@+id/iv_user"
+            <!--            <ImageView
+                            android:id="@+id/iv_user"
 
-                android:layout_width="17dp"
-                android:layout_height="17dp"
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
 
-                android:layout_marginTop="10dp"
-                android:background="@drawable/shape_item_user_iamge"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/shape_item_user_iamge"
 
-                app:layout_constraintTop_toBottomOf="@id/rank"
-                app:layout_constraintStart_toStartOf="@id/rank"
-                />
-            
-            <TextView
-                android:id="@+id/tv_user_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                            app:layout_constraintTop_toBottomOf="@id/rank"
+                            app:layout_constraintStart_toStartOf="@id/rank"
+                            />-->
 
-                android:layout_marginStart="7dp"
-                android:fontFamily="@font/orbitron_regular"
-                android:textSize="12dp"
-                android:textColor="@color/black"
+            <!--      <TextView
+                      android:id="@+id/tv_user_name"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
 
-                app:layout_constraintStart_toEndOf="@id/iv_user"
-                app:layout_constraintTop_toTopOf="@id/iv_user"
-                app:layout_constraintBottom_toBottomOf="@id/iv_user"
+                      android:layout_marginStart="7dp"
+                      android:fontFamily="@font/orbitron_regular"
+                      android:textSize="12dp"
+                      android:textColor="@color/black"
 
-                tools:text="짱구"
-                />
+                      app:layout_constraintStart_toEndOf="@id/iv_user"
+                      app:layout_constraintTop_toTopOf="@id/iv_user"
+                      app:layout_constraintBottom_toBottomOf="@id/iv_user"
+
+                      tools:text="짱구"
+                      />-->
             <TextView
                 android:id="@+id/time"
                 android:layout_width="wrap_content"
