@@ -66,6 +66,7 @@ open class RtspSurfaceView: SurfaceView {
         fun onRtspStatusFailedUnauthorized() {}
         fun onRtspStatusFailed(message: String?) {}
         fun onRtspFirstFrameRendered() {}
+        fun onRtspFrame(byteArray : ByteArray) {}
     }
 
     private val proxyClientListener = object: RtspClient.RtspClientListener {
@@ -118,6 +119,7 @@ open class RtspSurfaceView: SurfaceView {
         }
 
         override fun onRtspVideoNalUnitReceived(data: ByteArray, offset: Int, length: Int, timestamp: Long) {
+            statusListener!!.onRtspFrame(data)
             if (length > 0) videoFrameQueue.push(FrameQueue.Frame(data, offset, length, timestamp))
         }
 

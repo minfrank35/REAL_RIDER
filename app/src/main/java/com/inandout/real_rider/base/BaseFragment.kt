@@ -14,17 +14,19 @@ import androidx.navigation.NavController
 import androidx.navigation.NavOptions
 import androidx.navigation.Navigator
 import androidx.navigation.fragment.findNavController
+import com.inandout.real_rider.util.BluetoothThread
 
 
 abstract class BaseFragment<T : ViewDataBinding>(@LayoutRes private val layoutResId: Int) : Fragment() {
     lateinit var binding : T
+    lateinit var bluetoothThread : BluetoothThread
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     )  : View? {
         binding = DataBindingUtil.inflate(inflater, layoutResId, container, false)
-
+        bluetoothThread = BluetoothThread.getInstance(requireContext())
         return binding.root
     }
 
@@ -56,5 +58,11 @@ abstract class BaseFragment<T : ViewDataBinding>(@LayoutRes private val layoutRe
         if (action != null && currentDestination?.id != action.destinationId) {
             navigate(resId, args, navOptions, navExtras)
         }
+    }
+
+    protected open fun finishApp() {
+        requireActivity().finishAffinity()
+        System.runFinalization()
+        System.exit(0)
     }
 }
