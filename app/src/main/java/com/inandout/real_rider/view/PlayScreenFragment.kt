@@ -120,6 +120,22 @@ class PlayScreenFragment : BaseFragment<FragmentPlayScreenBinding>(R.layout.frag
             }
         })
         binding.svVideo.start(true, true)
+
+//
+//        val username = "2"
+//        val password = "3"
+//        val stopped = AtomicBoolean(false)
+//        val sslSocket = NetUtils.createSslSocketAndConnect(uri.getHost()!!, uri.getPort(), 10000)
+//
+//        val rtspClient = RtspClient.Builder(sslSocket, uri.toString(), stopped, rtspClientListener)
+//            .requestVideo(true)
+//            .requestAudio(true)
+//            .withDebug(false)
+//            .withUserAgent("RTSP client")
+//            .withCredentials(username, password)
+//            .build()
+//// Blocking call until stopped variable is true or connection failed
+//        rtspClient.execute()
     }
 
 
@@ -129,10 +145,10 @@ class PlayScreenFragment : BaseFragment<FragmentPlayScreenBinding>(R.layout.frag
             override fun onTouch(v: View?, event: android.view.MotionEvent?): Boolean {
                 when (event?.action) {
                     android.view.MotionEvent.ACTION_DOWN -> {
-                        bluetoothThread.sendData("q")
+                        bluetoothThread.sendData("a")
                     }
                     android.view.MotionEvent.ACTION_UP -> {
-                        bluetoothThread.sendData("2")
+                        bluetoothThread.sendData("z")
 
                     }
                 }
@@ -144,10 +160,10 @@ class PlayScreenFragment : BaseFragment<FragmentPlayScreenBinding>(R.layout.frag
             override fun onTouch(v: View?, event: android.view.MotionEvent?): Boolean {
                 when (event?.action) {
                     android.view.MotionEvent.ACTION_DOWN -> {
-                        bluetoothThread.sendData("e")
+                        bluetoothThread.sendData("d")
                     }
                     android.view.MotionEvent.ACTION_UP -> {
-                        bluetoothThread.sendData("2")
+                        bluetoothThread.sendData("c")
 
                     }
                 }
@@ -159,10 +175,10 @@ class PlayScreenFragment : BaseFragment<FragmentPlayScreenBinding>(R.layout.frag
             override fun onTouch(v: View?, event: android.view.MotionEvent?): Boolean {
                 when (event?.action) {
                     android.view.MotionEvent.ACTION_DOWN -> {
-                        bluetoothThread.sendData("u")
+                        bluetoothThread.sendData("w")
                     }
                     android.view.MotionEvent.ACTION_UP -> {
-                        bluetoothThread.sendData("5")
+                        bluetoothThread.sendData("m")
                     }
                 }
                 return true
@@ -173,10 +189,10 @@ class PlayScreenFragment : BaseFragment<FragmentPlayScreenBinding>(R.layout.frag
             override fun onTouch(v: View?, event: android.view.MotionEvent?): Boolean {
                 when (event?.action) {
                     android.view.MotionEvent.ACTION_DOWN -> {
-                        bluetoothThread.sendData("d")
+                        bluetoothThread.sendData("s")
                     }
                     android.view.MotionEvent.ACTION_UP -> {
-                        bluetoothThread.sendData("5")
+                        bluetoothThread.sendData("p")
                     }
                 }
                 return true

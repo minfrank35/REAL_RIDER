@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "389986706657",
+    "project_id": "real-rider-177dd",
+    "storage_bucket": "real-rider-177dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389986706657:android:91b46eca3b751aef5243a0",
+        "android_client_info": {
+          "package_name": "com.inandout.real_ider"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRtWn0DtzB0LgPcEcrktljYrwkWPjkao8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
