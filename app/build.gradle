@@ -17,6 +17,7 @@ android {
         versionName "1.0.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -62,4 +63,11 @@ dependencies {
     //cardview
     implementation "androidx.cardview:cardview:1.0.0"
     implementation project(':library-client-rtsp')
+
+    //google-gson, remotemonster 영상처리 2023/11/28
+    implementation platform('com.google.firebase:firebase-bom:26.8.0')
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    implementation 'com.google.firebase:firebase-firestore-ktx'
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.kakaoenterprise:kakao-i-connect-live:2.9.13'
 }

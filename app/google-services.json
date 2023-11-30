@@ -7,12 +7,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:389986706657:android:91b46eca3b751aef5243a0",
+        "mobilesdk_app_id": "1:389986706657:android:ee651327383821075243a0",
         "android_client_info": {
-          "package_name": "com.inandout.real_ider"
+          "package_name": "com.inandout.real_rider"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "389986706657-1ofodnjr8leao5fj5mkgn92t4v2deicv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyCRtWn0DtzB0LgPcEcrktljYrwkWPjkao8"
@@ -20,7 +25,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389986706657-1ofodnjr8leao5fj5mkgn92t4v2deicv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
